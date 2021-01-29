@@ -1,0 +1,268 @@
+:root {
+  /* Color */
+
+  --white-color: rgb(181, 189, 197);
+  --black-color: rgb(20, 10, 0);
+  --red-color: rgb(255, 0, 0);
+  --blue-color: rgb(29, 95, 212);
+  --grey-dark-color: rgb(153, 151, 153);
+  --grey-light-color: rgb(143, 142, 143);
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--grey-dark-color);
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.logo {
+  font-size: var(--font-large);
+}
+
+.logo i {
+  color: var(--red-color);
+}
+
+header .icons .fa-search {
+  padding: var(--padding);
+}
+
+.videoPlayer {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.videoPlayer video {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+.info {
+  padding: var(--padding);
+}
+
+.info .metaData {
+  display: column;
+}
+
+.info .metaData .Hashtags {
+  list-style: none;
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+  font-weight: bold;
+  padding: var(--padding) var(--padding) var(--padding) 0;
+}
+
+.info .metaData .Hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .metaData .title {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-medium);
+  font-weight: bold;
+}
+
+.info .metaData .title .text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .metaData .viewDay {
+  font-size: var(--font-micro);
+  color: var(--grey-light-color);
+}
+
+.info .metaData .title .Btn {
+  height: 100%;
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--padding);
+  list-style: none;
+  color: var(--grey-dark-color);
+  font-size: var(--font-small);
+}
+
+.info .actions li {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .actions i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: var(--font-large);
+}
+
+.info .actions i.Thumpsup {
+  color: var(--blue-color);
+}
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.channel .metaData {
+  display: flex;
+  align-items: center;
+}
+
+.channel .metaData img {
+  border-radius: 50%;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
+
+.channel .metaData .info {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.channel .metaData .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.channel .SubscribeBtn {
+  font-weight: bold;
+  color: var(--red-color);
+  text-transform: uppercase;
+}
+
+.upNext {
+  padding: 0 var(--padding);
+}
+
+.upNext > .title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.upNext ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext ul .item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  height: 100%;
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+}
+
+.upNext .item .img img {
+  width: 100%;
+}
+
+.upNext .item .info {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 0;
+}
+
+.upNext .item .info .nameAndViews {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  font-weight: bold;
+  color: var(--grey-light-color);
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+  height: 100%;
+}
+
+.upNext .item .info .title {
+  font-size: var(--font-medium);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoAndUpNext .info {
+  flex: 1 1 50%;
+}
+
+.infoAndUpNext .upNext {
+  flex: 1 1 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    display: flex;
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+}
+
+.infoAndUpNext .info .metaData .title .Btn.clicked {
+  transform: rotate(180deg);
+}
+
+.infoAndUpNext .info .metaData .title .Btn {
+  transition: transform 300ms ease-in-out;
+}
+
+.infoAndUpNext .info .metaData .title .text.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

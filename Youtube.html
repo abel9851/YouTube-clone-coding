@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube clone coding</title>
+    <link rel="stylesheet" href="Youtube.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script defer src="Youtube.js"></script>
+    <script src="https://kit.fontawesome.com/a5269f0312.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i></i>
+            <span class="title">Youtube</span>
+        </div>
+        <span class="icons">
+            <span><i class="fas fa-search"></i></span>
+            <span><i class="fas fa-ellipsis-v"></i></span>
+        </span>
+    </header>
+
+    <!--Video Player-->
+    <section class="videoPlayer">
+        <video controls>
+            <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+            <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+            <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg' />
+        </video>
+
+    </section>
+
+
+    <div class="infoAndUpNext">
+        <!--Video Info -->
+        <section class="info">
+            <!--Metadata-->
+            <div class="metaData">
+                <ul class="Hashtags">
+                    <li>#Studying</li>
+                    <li>#Coding</li>
+                    <li>#Heejun</li>
+                </ul>
+                <div class="title">
+                    <span class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Reiciendis optio unde deserunt,
+                        impedit iusto laborum magni mollitia
+                        earum tempore neque quos exercitationem
+                        eligendi odio accusamus suscipit libero dolor tenetur nemo.
+                    </span>
+                    <button class="Btn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <span class="viewDay">1years ago</span>
+            </div>
+            <!--Action Btn-->
+            <ul class="actions">
+                <li>
+                    <i class=" Thumpsup fas fa-thumbs-up"></i>
+                    <span class="text"> 1K</span>
+                </li>
+                <li><i class="fas fa-thumbs-down"></i>
+                    <span class="text">1K</span>
+                </li>
+                <li><i class="fas fa-share"></i>
+                    <span class="text">1K</span>
+                </li>
+                <li><i class="fas fa-plus"></i>
+                    <span class="text">1K</span>
+                </li>
+                <li><i class="fab fa-font-awesome-flag"></i>
+                    <span class="text">1K</span>
+                </li>
+            </ul>
+    
+            <!-- Channel Info-->
+            <div class="channel">
+                <div class="metaData">
+                    <img src="Img/Profile.jpg" alt="Profile">
+                    <span class="info">
+                        <span class="name">Heejun's coding</span>
+                        <span class="subscribers">1 Subscriber</span>
+                    </span>
+                </div>
+                <div class="SubscribeBtn">Subscribe</div>
+            </div>
+        </section>   
+
+        <!--Play List-->
+        <section class="upNext">
+            <div class="title">Up Next</div>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="Img/App.JPG" alt="App"></div>
+                    <div class="info">
+                        <span class="title">App
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus asperiores reprehenderit ab enim, eos pariatur exercitationem ut magnam tenetur rerum quidem, hic impedit dolore, ex repudiandae omnis nam consequatur?
+                        </span>
+                        <div class="nameAndViews">
+                            <span class="name">Heejun</span>
+                            <span class="views">1M Views</span>
+                        </div>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+    
+                <li class="item">
+                    <div class="img"><img src="Img/Color.JPG" alt="Cosmetic Color"></div>
+                    <div class="info">
+                        <span class="title">Cosmetic color
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae facilis, repudiandae nam minus dignissimos quae neque dolor incidunt repellendus eveniet nesciunt quos impedit eaque accusantium sapiente quisquam voluptatibus. Quasi, iusto!
+                        </span>
+                        <div class="nameAndViews">
+                            <span class="name">Heejun</span>
+                            <span class="views">1M Views</span>
+                        </div>
+    
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+    
+                <li class="item">
+                    <div class="img"><img src="Img/Food.JPG" alt="Mont Blanc"></div>
+                    <div class="info">
+                        <span class="title">Mont Blanc
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quia voluptatibus id voluptate exercitationem consequuntur architecto beatae doloremque, vitae optio magnam laborum nesciunt. Iste omnis obcaecati quidem accusamus unde eligendi?
+                        </span>
+                        <div class="nameAndViews">
+                            <span class="name">Heejun</span>
+                            <span class="views">1M Views</span>
+                        </div>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </div>
+ 
+</body>
+
+</html>
